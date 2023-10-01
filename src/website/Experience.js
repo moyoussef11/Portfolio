@@ -28,7 +28,7 @@ const Experience = () => {
             Experience
           </h2>
           <p className="font-bold my-1">
-            // These are the technologies I've worked with
+            These are the technologies I've worked with
           </p>
         </div>
         <div className="w-full py-5 flex flex-wrap space-y-5">{show}</div>

@@ -9,7 +9,7 @@ const Work = () => {
             Work
           </p>
           <p className="font-bold my-1">
-            // check out some of my recent work. To see more go to
+            check out some of my recent work. To see more go to
             <a
               href="https://github.com/moyoussef11?tab=repositories"
               target="_blank"
