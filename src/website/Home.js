@@ -26,7 +26,12 @@ const Home = () => {
               </button>
             </Link>
           </div>
-          <a target="_blank" rel="noreferrer" href="../assets/pdf/CV.pdf" className="btnHover">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/1_-GAcenIc_BcthwKKO6ROcC58yd3QMJ8/view?usp=drive_link"
+            className="btnHover"
+          >
             download CV
           </a>
         </div>
