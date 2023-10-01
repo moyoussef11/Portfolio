@@ -3,6 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-scroll";
 
 const Home = () => {
+
   return (
     <div name="home" className="sections">
       <div className="max-w-[700px] p-5 flex flex-col items-center sm:items-start space-y-2">
@@ -19,14 +20,15 @@ const Home = () => {
         <div className="flex items-center space-x-3">
           <div className="group">
             <Link to="work" smooth={true} duration={500}>
-              
               <button className="btnHover">
                 view work
                 <AiOutlineArrowRight className="group-hover:rotate-90 duration-200 ml-2" />
               </button>
             </Link>
           </div>
-          <button className="btnHover">download CV</button>
+          <a target="_blank" rel="noreferrer" href="../assets/pdf/CV.pdf" className="btnHover">
+            download CV
+          </a>
         </div>
       </div>
     </div>
