@@ -8,7 +8,7 @@ const Contact = () => {
       <motion.form
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 7 }}
+        transition={{ duration: 5 }}
         method="POST"
         action="https://getform.io/f/a2ffcb47-1654-41ce-af71-c80033dfd8a5"
         className="w-full flex flex-col max-w-[700px]"

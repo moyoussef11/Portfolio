@@ -30,7 +30,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <div className="fixed h-20 w-full bg-[#202124] text-white flex items-center justify-between px-1 z-10">
+      <div className="fixed h-20 w-full bg-[#202124] text-white flex items-center justify-between z-10 left-0 px-1">
         <span
           style={{ width: width }}
           className="h-[2px] bg-[#5E17EB] absolute top-20 left-0 duration-100"
@@ -69,7 +69,7 @@ const NavBar = () => {
         </motion.div>
         <div
           onClick={handleNav}
-          className="sm:hidden cursor-pointer hover:text-[#5E17EB] duration-300"
+          className="sm:hidden cursor-pointer hover:text-[#5E17EB]"
         >
           {!nav ? <FaBars size={"30"} /> : <AiOutlineCloseCircle size={"30"} />}
         </div>

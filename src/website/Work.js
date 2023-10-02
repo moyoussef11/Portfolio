@@ -7,7 +7,7 @@ const Work = () => {
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 5 }}
+        transition={{ duration: 2 }}
         className="max-w-[700px] mx-auto p-4 flex flex-col justify-center w-full h-full"
       >
         <div className="pb-8 flex flex-col items-center sm:items-start">
