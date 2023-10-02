@@ -8,6 +8,7 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
+import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
@@ -37,7 +38,7 @@ const NavBar = () => {
         <div className="w-24 ml-[-22px]">
           <img src={Logo} alt="logo" className="w-full" />
         </div>
-        <div className="hidden sm:flex">
+        <motion.div initial={{opacity:0}} animate={{opacity:10}} transition={{duration:2}} className="hidden sm:flex">
           <ul className="flex items-center space-x-10">
             <li className="navLi">
               <Link to="home" duration={300} smooth={true}>
@@ -65,7 +66,7 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
         <div
           onClick={handleNav}
           className="sm:hidden cursor-pointer hover:text-[#5E17EB] duration-300"
@@ -74,7 +75,7 @@ const NavBar = () => {
         </div>
         {/* mobile */}
         {nav ? (
-          <div className="absolute left-0 top-20 w-full bg-[#202124] text-center z-10">
+          <motion.div initial={{left:"-600px"}} animate={{left:0}} transition={{duration:0.5}} className="absolute top-20 w-full bg-[#202124] text-center z-10">
             <ul className="flex flex-col space-y-10 py-5">
               <li className="navLi">
                 <Link
@@ -127,7 +128,7 @@ const NavBar = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
         ) : (
           ""
         )}
