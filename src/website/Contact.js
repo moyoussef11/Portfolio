@@ -1,11 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Contact = () => {
 
   return (
     <div name="contact" className="sections">
-          <form 
-              method="POST"
+      <motion.form
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 7 }}
+        method="POST"
         action="https://getform.io/f/a2ffcb47-1654-41ce-af71-c80033dfd8a5"
         className="w-full flex flex-col max-w-[700px]"
       >
@@ -36,8 +40,10 @@ const Contact = () => {
           className="rounded-md bg-slate-300 p-2 my-2 placeholder:text-black placeholder:font-bold text-black"
           placeholder="Message"
         ></textarea>
-        <button type="submit" className="btnHover">send</button>
-      </form>
+        <button type="submit" className="btnHover">
+          send
+        </button>
+      </motion.form>
     </div>
   );
 };

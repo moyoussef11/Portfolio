@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { dataEperience } from "../assets";
+import { motion } from "framer-motion";
+
 
 const Experience = () => {
   const [num, setNum] = useState(4);
@@ -22,7 +24,12 @@ const Experience = () => {
   ));
   return (
     <div name="experience" className="sections">
-      <div className="w-full sm:w-[700px] flex flex-col">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 3 }}
+        className="w-full sm:w-[700px] flex flex-col"
+      >
         <div className="flex flex-col items-center justify-center sm:items-start">
           <h2 className="capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200">
             Experience
@@ -39,7 +46,7 @@ const Experience = () => {
             showMore
           </button>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };

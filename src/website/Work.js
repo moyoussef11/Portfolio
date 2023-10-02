@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Work = () => {
   return (
     <div name="work" className="sections">
-      <div className="max-w-[700px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 5 }}
+        className="max-w-[700px] mx-auto p-4 flex flex-col justify-center w-full h-full"
+      >
         <div className="pb-8 flex flex-col items-center sm:items-start">
           <p className="capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200">
             Work
@@ -202,7 +208,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
