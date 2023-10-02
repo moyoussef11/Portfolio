@@ -25,7 +25,7 @@ const Experience = () => {
   return (
     <div name="experience" className="sections">
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 3 }}
         className="w-full sm:w-[700px] flex flex-col"

@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <div name="work" className="sections">
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 5 }}
         className="max-w-[700px] mx-auto p-4 flex flex-col justify-center w-full h-full"

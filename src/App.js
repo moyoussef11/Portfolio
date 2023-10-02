@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import About from "./website/About";
@@ -9,7 +10,8 @@ import Work from "./website/Work";
 function App() {
    
   return (
-    <div >
+    <div>
+      <AnimatePresence mode="wait">
         <NavBar />
         <Home />
         <About />
@@ -17,6 +19,7 @@ function App() {
         <Work />
         <Contact />
         <Footer />
+      </AnimatePresence>
     </div>
   );
 }

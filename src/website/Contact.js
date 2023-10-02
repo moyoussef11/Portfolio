@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div name="contact" className="sections">
       <motion.form
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 7 }}
         method="POST"
