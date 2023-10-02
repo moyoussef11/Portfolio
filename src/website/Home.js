@@ -1,12 +1,13 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Home = () => {
 
   return (
     <div name="home" className="sections">
-      <div className="max-w-[700px] p-5 flex flex-col items-center sm:items-start space-y-2">
+      <motion.div initial={{ opacity: 0, x:100}} animate={{opacity:1,x:0}} transition={{duration:1}} className="max-w-[700px] p-5 flex flex-col items-center sm:items-start space-y-2">
         <p className="text-[#5E17EB]">Hi, my name is</p>
         <h1 className="sm:text-3xl capitalize font-bold">mohamed youssef</h1>
         <h3 className="capitalize font-bold text-3xl md:text-5xl text-slate-400">
@@ -35,7 +36,7 @@ const Home = () => {
             download CV
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
