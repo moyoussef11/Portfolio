@@ -4,7 +4,7 @@
 
 @layer base {
   .sections {
-    @apply w-full bg-[#202124] mx-auto flex items-center justify-center text-slate-100 py-[50px] sm:py-[150px] overflow-hidden;
+    @apply w-full bg-[#202124] mx-auto flex items-center justify-center text-slate-100 py-[80px] sm:py-[150px] overflow-hidden;
   }
 }
 
