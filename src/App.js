@@ -9,14 +9,14 @@ import Work from "./website/Work";
 function App() {
    
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Experience />
-      <Work /> 
-      <Contact />
-      <Footer />
+    <div >
+        <NavBar />
+        <Home />
+        <About />
+        <Experience />
+        <Work />
+        <Contact />
+        <Footer />
     </div>
   );
 }
