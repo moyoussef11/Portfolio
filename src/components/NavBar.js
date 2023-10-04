@@ -13,6 +13,7 @@ import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [theme, setTheme] = useState(false);
   const [width, setWidth] = useState(0);
   let height =
     document.documentElement.scrollHeight -
@@ -22,10 +23,9 @@ const NavBar = () => {
     setWidth(`${(scrollTop / height) * 100}%`);
   });
 
- 
-
   function toggleTheme() {
     document.body.classList.toggle("dark");
+    setTheme(!theme);
   }
 
   function handleClick() {
@@ -80,7 +80,7 @@ const NavBar = () => {
               onClick={toggleTheme}
               className="btnHover cursor-pointer dark:text-black"
             >
-              switch mode
+              {theme ? "dark" : "light"} mode
             </li>
           </ul>
         </motion.div>
@@ -88,7 +88,11 @@ const NavBar = () => {
           onClick={handleNav}
           className="sm:hidden cursor-pointer hover:text-[#5E17EB]"
         >
-          {!nav ? <FaBars size={"30"} className='dark:text-black' /> : <AiOutlineCloseCircle className='dark:text-black' size={"30"} />}
+          {!nav ? (
+            <FaBars size={"30"} className="dark:text-black" />
+          ) : (
+            <AiOutlineCloseCircle className="dark:text-black" size={"30"} />
+          )}
         </div>
         {/* mobile */}
         {nav ? (
@@ -153,7 +157,7 @@ const NavBar = () => {
                 onClick={toggleTheme}
                 className="btnHover cursor-pointer w-fit mx-auto dark:text-black"
               >
-                switch mode
+                {theme ? "dark" : "light"} mode
               </li>
             </ul>
           </motion.div>
