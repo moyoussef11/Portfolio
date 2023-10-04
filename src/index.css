@@ -25,6 +25,6 @@
     @apply flex items-center capitalize font-bold justify-between w-[160px] h-[50px] ml-[-110px] hover:ml-0 duration-300;
   }
   .btnHover {
-    @apply p-1 sm:px-4 sm:py-2 border-2 capitalize text-sm sm:font-bold flex items-center justify-center border-[#5E17EB] hover:bg-[#5E17EB] duration-300;
+    @apply p-1 sm:px-4 sm:py-2 border-2 capitalize text-sm sm:font-bold flex items-center justify-center border-[#5E17EB] hover:bg-[#5E17EB] duration-300 rounded-full;
   }
 }
