@@ -9,9 +9,7 @@ const About = () => {
         transition={{ duration: 2 }}
         className="h-[400px] w-full sm:w-[700px] flex items-center justify-center flex-col"
       >
-        <h2 className="capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200">
-          about
-        </h2>
+        <h2 className="title">about</h2>
         <div className="flex flex-col text-center sm:text-left sm:flex-row items-center justify-between space-x-5 space-y-5 p-2">
           <div className="w-full sm:w-1/2">
             <p className="capitalize font-bold sm:text-2xl text-slate-400">

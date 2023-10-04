@@ -22,15 +22,21 @@ const NavBar = () => {
     setWidth(`${(scrollTop / height) * 100}%`);
   });
 
+ 
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+
   function handleClick() {
-    setNav(false)
+    setNav(false);
   }
   function handleNav() {
     setNav(!nav);
   }
   return (
     <>
-      <div className="fixed h-20 w-full bg-[#202124] text-white flex items-center justify-between z-10 left-0 px-1">
+      <div className="fixed h-20 w-full bg-[#202124] dark:bg-gray-100 text-white flex items-center justify-between z-10 left-0 px-1">
         <span
           style={{ width: width }}
           className="h-[2px] bg-[#5E17EB] absolute top-20 left-0 duration-100"
@@ -38,7 +44,12 @@ const NavBar = () => {
         <div className="w-24 ml-[-22px]">
           <img src={Logo} alt="logo" className="w-full" />
         </div>
-        <motion.div initial={{opacity:0}} animate={{opacity:10}} transition={{duration:2}} className="hidden sm:flex">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 10 }}
+          transition={{ duration: 2 }}
+          className="hidden sm:flex"
+        >
           <ul className="flex items-center space-x-10">
             <li className="navLi">
               <Link to="home" duration={300} smooth={true}>
@@ -65,17 +76,28 @@ const NavBar = () => {
                 contact
               </Link>
             </li>
+            <li
+              onClick={toggleTheme}
+              className="btnHover cursor-pointer dark:text-black"
+            >
+              switch mode
+            </li>
           </ul>
         </motion.div>
         <div
           onClick={handleNav}
           className="sm:hidden cursor-pointer hover:text-[#5E17EB]"
         >
-          {!nav ? <FaBars size={"30"} /> : <AiOutlineCloseCircle size={"30"} />}
+          {!nav ? <FaBars size={"30"} className='dark:text-black' /> : <AiOutlineCloseCircle className='dark:text-black' size={"30"} />}
         </div>
         {/* mobile */}
         {nav ? (
-          <motion.div initial={{left:"-600px"}} animate={{left:0}} transition={{duration:0.5}} className="absolute top-20 w-full bg-[#202124] text-center z-10">
+          <motion.div
+            initial={{ left: "-600px" }}
+            animate={{ left: 0 }}
+            transition={{ duration: 0.5 }}
+            className="absolute top-20 w-full bg-[#202124] dark:bg-gray-100 text-center z-10"
+          >
             <ul className="flex flex-col space-y-10 py-5">
               <li className="navLi">
                 <Link
@@ -126,6 +148,12 @@ const NavBar = () => {
                 >
                   contact
                 </Link>
+              </li>
+              <li
+                onClick={toggleTheme}
+                className="btnHover cursor-pointer w-fit mx-auto dark:text-black"
+              >
+                switch mode
               </li>
             </ul>
           </motion.div>

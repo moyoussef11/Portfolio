@@ -8,7 +8,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
     return (
-      <div className="bg-[#202124] py-3">
+      <div className="bg-[#202124] dark:bg-gray-100 py-3">
         <ul className="flex items-center justify-center space-x-5">
           <li>
             <a
@@ -25,7 +25,7 @@ const Footer = () => {
               href="https://github.com/moyoussef11?tab=repositories"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between w-full hover:scale-150 duration-300"
+              className="flex items-center justify-between w-full hover:scale-150 duration-300 dark:bg-black rounded-full"
             >
               <AiFillGithub size={30} color="#fff" />
             </a>
@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="text-center font-bold text-white mt-2">
+        <p className="text-center font-bold text-white dark:text-[#202124] mt-2">
           Mohame<span className="text-[#5E17EB]">d Y</span>oussef
         </p>
       </div>

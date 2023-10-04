@@ -11,9 +11,7 @@ const Work = () => {
         className="max-w-[700px] mx-auto p-4 flex flex-col justify-center w-full h-full"
       >
         <div className="pb-8 flex flex-col items-center sm:items-start">
-          <p className="capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200">
-            Work
-          </p>
+          <p className="title">Work</p>
           <p className="font-bold my-1">
             check out some of my recent work. To see more go to
             <a

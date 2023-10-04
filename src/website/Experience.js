@@ -16,7 +16,7 @@ const Experience = () => {
     >
       <img
         src={item.pic}
-        className="w-full h-20 object-contain hover:scale-150 duration-300"
+        className="w-full h-20 object-contain hover:scale-150 duration-300 dark:text-black"
         alt="react"
       />
       <p className="capitalize font-bold">{item.title}</p>
@@ -31,9 +31,7 @@ const Experience = () => {
         className="w-full sm:w-[700px] flex flex-col"
       >
         <div className="flex flex-col items-center justify-center sm:items-start">
-          <h2 className="capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200">
-            Experience
-          </h2>
+          <h2 className="title">Experience</h2>
           <p className="font-bold my-1">
             These are the technologies I've worked with
           </p>

@@ -2,18 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   .sections {
     @apply w-full bg-[#202124] mx-auto flex items-center justify-center text-slate-100 py-[80px] sm:py-[150px] overflow-hidden;
   }
-}
+} */
 
 @layer components {
+   .sections {
+    @apply w-full bg-[#202124] mx-auto flex items-center justify-center dark:bg-gray-200 dark:text-black text-slate-100 py-[80px] sm:py-[150px] overflow-hidden;
+  }
+  .title{
+    @apply capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200 dark:text-[#202124];
+  }
   .active {
     @apply text-[#5E17EB] border-b-4 border-[#5E17EB];
   }
   .navLi {
-    @apply capitalize font-bold cursor-pointer hover:text-[#5E17EB] duration-300;
+    @apply capitalize font-bold cursor-pointer hover:text-[#5E17EB] duration-300 dark:text-black dark:hover:text-[#5E17EB];
   }
   .LiIcon {
     @apply flex items-center capitalize font-bold justify-between w-[160px] h-[50px] ml-[-110px] hover:ml-0 duration-300;
@@ -21,11 +27,4 @@
   .btnHover {
     @apply p-1 sm:px-4 sm:py-2 border-2 capitalize text-sm sm:font-bold flex items-center justify-center border-[#5E17EB] hover:bg-[#5E17EB] duration-300;
   }
-}
-
-.content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 250px;
 }

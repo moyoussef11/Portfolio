@@ -14,9 +14,7 @@ const Contact = () => {
         className="w-full flex flex-col max-w-[700px]"
       >
         <div className="flex flex-col items-center sm:items-start justify-center">
-          <p className="capitalize text-2xl sm:text-4xl font-bold border-b-4 border-[#5E17EB] text-slate-200">
-            Contact
-          </p>
+          <p className="title">Contact</p>
           <p className="font-bold my-1"> submit the form below </p>
         </div>
         <input
