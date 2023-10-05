@@ -1,7 +1,43 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { workData } from "../assets";
 
 const Work = () => {
+
+  const showWork = workData.map((item, index) => (
+    <div
+      key={index}
+      style={{
+        backgroundImage: `url(${item.pic})`,
+      }}
+      className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
+    >
+      {/* hover effects */}
+      <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
+        <div className="flex justify-between space-x-5">
+          <a
+            href={item.repo}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
+              repo
+            </button>
+          </a>
+          <a
+            href={item.demo}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
+              demo
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  ));
+  
   return (
     <div name="work" className="sections">
       <motion.div
@@ -25,186 +61,7 @@ const Work = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div
-            style={{
-              backgroundImage: `url(${require("../assets/images/amazonclone.png")})`,
-            }}
-            className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
-          >
-            {/* hover effects */}
-            <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
-              <div className="flex justify-between space-x-5">
-                <a
-                  href="https://github.com/moyoussef11/amazonclone"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    repo
-                  </button>
-                </a>
-                <a
-                  href="https://amazoncloneeee.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              backgroundImage: `url(${require("../assets/images/e-coomerce.png")})`,
-            }}
-            className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
-          >
-            {/* hover effects */}
-            <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
-              <div className="flex justify-between space-x-5">
-                <a
-                  href="https://github.com/moyoussef11/simpleE-commerce"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    repo
-                  </button>
-                </a>
-                <a
-                  href="https://65031d4f99943809aeba138a--relaxed-lamington-dff577.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              backgroundImage: `url(${require("../assets/images/restaurants.png")})`,
-            }}
-            className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
-          >
-            {/* hover effects */}
-            <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
-              <div className="flex justify-between space-x-5">
-                <a
-                  href="https://github.com/moyoussef11/Restaurants"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    repo
-                  </button>
-                </a>
-                <a
-                  href="https://graceful-manatee-dcee26.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              backgroundImage: `url(${require("../assets/images/roombooking.png")})`,
-            }}
-            className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
-          >
-            {/* hover effects */}
-            <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
-              <div className="flex justify-between space-x-5">
-                <a
-                  href="https://github.com/moyoussef11/room-booking"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    repo
-                  </button>
-                </a>
-                <a
-                  href="https://marvelous-smakager-4cb2e8.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              backgroundImage: `url(${require("../assets/images/libertyNET.png")})`,
-            }}
-            className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
-          >
-            {/* hover effects */}
-            <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
-              <div className="flex justify-between space-x-5">
-                <a
-                  href="https://github.com/moyoussef11/LibertyNFTMarket"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    repo
-                  </button>
-                </a>
-                <a
-                  href="https://moyoussef11.github.io/LibertyNFTMarket/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              backgroundImage: `url(${require("../assets/images/business.png")})`,
-            }}
-            className="shadow-lg shadow-[#5E17EB] group container rounded-md flex justify-center items-center mx-auto bg-no-repeat bg-cover h-[200px]"
-          >
-            {/* hover effects */}
-            <div className="h-full w-full flex items-center opacity-0 justify-center group-hover:bg-[#5E17EB] group-hover:opacity-75 duration-300 rounded-lg">
-              <div className="flex justify-between space-x-5">
-                <a
-                  href="https://github.com/moyoussef11/Business"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    repo
-                  </button>
-                </a>
-                <a
-                  href="https://moyoussef11.github.io/Business/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="p-1 bg-white text-[#5E17EB] rounded-full capitalize font-bold hover:text-white hover:bg-[#5E17EB] duration-300">
-                    demo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+        {showWork}
         </div>
       </motion.div>
     </div>
