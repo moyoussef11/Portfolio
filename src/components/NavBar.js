@@ -48,7 +48,7 @@ const NavBar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 10 }}
           transition={{ duration: 2 }}
-          className="hidden sm:flex"
+          className="hidden md:flex"
         >
           <ul className="flex items-center space-x-10">
             <li className="navLi">
@@ -72,6 +72,11 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="navLi">
+              <Link to="Certificate" duration={300} smooth={true}>
+                Certificate
+              </Link>
+            </li>
+            <li className="navLi">
               <Link to="contact" duration={300} smooth={true}>
                 contact
               </Link>
@@ -86,7 +91,7 @@ const NavBar = () => {
         </motion.div>
         <div
           onClick={handleNav}
-          className="sm:hidden cursor-pointer hover:text-[#5E17EB]"
+          className="md:hidden cursor-pointer hover:text-[#5E17EB]"
         >
           {!nav ? (
             <FaBars size={"30"} className="dark:text-black" />
@@ -141,6 +146,16 @@ const NavBar = () => {
                   smooth={true}
                 >
                   work
+                </Link>
+              </li>
+              <li className="navLi">
+                <Link
+                  to="Certificate"
+                  onClick={handleClick}
+                  duration={300}
+                  smooth={true}
+                >
+                  Certificate
                 </Link>
               </li>
               <li className="navLi">

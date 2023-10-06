@@ -1,3 +1,4 @@
+import Accuracy from "./Accuracy";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import About from "./website/About";
@@ -7,16 +8,16 @@ import Home from "./website/Home";
 import Work from "./website/Work";
 
 function App() {
-   
   return (
     <div>
-        <NavBar />
-        <Home />
-        <About />
-        <Experience />
-        <Work />
-        <Contact />
-        <Footer />
+      <NavBar />
+      <Home />
+      <About />
+      <Experience />
+      <Work />
+      <Accuracy />
+      <Contact />
+      <Footer />
     </div>
   );
 }
