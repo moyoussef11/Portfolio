@@ -21,15 +21,18 @@ const Accuracy = () => {
           <h2 className="title">certificate</h2>
           <p className="font-bold my-1">I have obtained these certificates </p>
         </div>
-        <div className="w-full shadow-2xl shadow-[#5E17EB] container rounded-md">
+        <div className="w-full shadow-2xl shadow-[#5E17EB] container rounded-md relative">
           <motion.img
-            initial={{ x:200 }}
-            animate={{  x:0}}
-            transition={{duration:.5}}
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
             src={pic[index]}
             className="w-full object-contain"
             alt="Certificate"
           />
+          <span className="absolute top-0 right-0 py-1 px-3 m-3 bg-[#5E17EB] rounded font-bold text-white">
+            {index+1}/{pic.length}
+          </span>
         </div>
       </div>
     </div>
