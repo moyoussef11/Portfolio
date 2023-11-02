@@ -13,7 +13,7 @@ const About = () => {
         <div className="flex flex-col text-center sm:text-left sm:flex-row items-center justify-between space-x-5 space-y-5 p-2">
           <div className="w-full sm:w-1/2">
             <p className="capitalize font-bold sm:text-2xl text-slate-400">
-              Hello I'm Mohamed youssef a 19 years old, a passionate Front-End
+              Hello I'm Mohamed youssef a 20 years old, a passionate Front-End
               Developer and a student of Computer Science.
             </p>
           </div>
